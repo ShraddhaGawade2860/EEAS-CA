@@ -3,12 +3,12 @@ class Config:
     TICKET_SUMMARY = 'Ticket Summary'
     INTERACTION_CONTENT = 'Interaction content'
 
-    # Target/Type columns to test or predict
+    # Type columns
     TYPE2 = 'y2'
     TYPE3 = 'y3'
     TYPE4 = 'y4'
 
-    TYPE_COLS = [y2, y3, y4]
+    TYPE_COLS = [TYPE2, TYPE3, TYPE4]   # Use class variables
 
-    # If you have a main class or grouped label
-    CLASS_COL = y2  # or whichever you want as main class
+    # Main label for first-level classification
+    CLASS_COL = TYPE2

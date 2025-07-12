@@ -13,7 +13,7 @@ class Data:
         self.X = self.X[valid]
         self.y = self.y[valid]
 
-        # Filter classes with at least 3 samples
+        # Filter classes with 3 samples
         y_series = pd.Series(self.y)
         good_classes = y_series.value_counts()[y_series.value_counts() >= 3].index
         keep = y_series.isin(good_classes)
